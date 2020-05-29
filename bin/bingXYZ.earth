@@ -1,0 +1,25 @@
+<!--
+Mircosoft Bing Maps example.
+
+  Usage of Bing Maps requires a key. Get a key here:
+  http://www.bing.com/developers/
+
+  Bing Maps Terms of Service:
+  http://www.microsoft.com/maps/product/terms.html
+
+Supported imagery sets are Aerial, AerialWithLabels, and Road.
+-->
+
+<map>    
+<image name="mapbox_satellite" driver="xyz">
+    <url>c:\OpenSceneGraph\bin\google\z{z}\{y}\{x}.jpg</url>
+        <profile>spherical-mercator</profile>
+        <cache_policy usage="read_write"/>
+</image>
+<options> 
+	<cache type="filesystem"> 
+		<path>C:/osgEarthCache/google</path> 
+	</cache>
+</options> 
+
+</map>
